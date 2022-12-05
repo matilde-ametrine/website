@@ -1,0 +1,109 @@
+@import url(./normalize.css);
+@import url(./font.css);
+
+#background {
+    background-size: cover !important;
+    background: #d8dee9 url(/img/bg.jpg);
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+}
+
+#content {
+    padding: 4ch;
+}
+
+#header {
+    background-color: #3b4252;
+    border-bottom: 1px solid #4c566a;
+    font-weight: 700;
+    padding: 2ch 4ch;
+    text-align: center;
+}
+
+#name, .footnote-back, .footnote-ref {
+    text-decoration: none;
+}
+
+#cursor {
+    animation: blinker 0.75s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+#wrapper {
+    background-color: #2e3440;
+    border: 1px solid #4c566a;
+    color: #d8dee9;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 11pt;
+    left: 0;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80ch;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.nix-store {
+    display: block;
+    padding-left: 2ch;
+    word-wrap: break-word;
+}
+
+a, li::marker {
+    color: #8fbcbb;
+}
+
+b, strong {
+    color: #eceff4;
+}
+
+body {
+    margin: 0px;
+}
+
+h1, h2, h3, h4 {
+    color: #88c0d0;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+}
+
+hr {
+    border-bottom: 0 !important;
+}
+
+hr, td, th, .bordered {
+    border: 1px solid #434c5e;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol, ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.25em;
+}
+
+textarea {
+    resize: none;
+}

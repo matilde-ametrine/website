@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Matilde H. Ametrine"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.00"/>
+        <link href="/css/main.css" rel="stylesheet"/>
+        <title>$title$</title>
+    </head>
+    <body>
+        <div id="background"></div>
+        <div id="wrapper">
+            <div id="header">
+                Networks: <a class="light-blue" href="http://ametrine.name$http_path$">Clearnet</a>&nbsp;/&nbsp;<a class="light-blue" href="http://y.ametrine.name$http_path$">Yggdrasil</a>&nbsp;/&nbsp;<a class="light-blue" href="http://hkjvyuc3asswxa7uxyalrnpqab4lyvzriu2rsq6jbjc2kaoabghq.b32.i2p$http_path$">I2P</a>
+            </div>
+            <div id="content">
+                <h1><a href="/" id="name">&gt; ssh matilde@ametrine.name<span id="cursor">_</span></a></h1>
+                <hr/>
+                <h2>$title$</h2>
+                $if(subtitle)$
+                    <h3>$subtitle$</h3>
+                $endif$
+                $if(date)$
+                    <h3>Page modified on $date$</h3>
+                $endif$
+                <hr/>
+$body$
+                $if(hide-footer)$
+                $else$
+                <hr/>
+                <div id="footer">
+                    <p>Served by NixOS + nginx from<br/><span class="nix-store">$nix_store$</span><br/>
+                       (Derivation: <a href="https://github.com/matilde-ametrine/website/">matilde-ametrine/website</a>)</p>
+                    <p>Content license: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (unless otherwise specified)</p>
+                </div>
+                $endif$
+            </div>
+        </div>
+    </body>
+</html>
